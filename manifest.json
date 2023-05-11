@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "J Ad Blocker",
+  "version": "1.0",
+  "description": "A simple extension to block annoying ads on J-sites",
+  "content_scripts": [
+    {
+      "matches": ["https://jable.tv/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["https://jable.tv/*"]
+}
